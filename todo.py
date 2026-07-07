@@ -21,8 +21,13 @@ while True:
              view_tasks()
              delete = int(input("Enter the number you wanted to delete from the list \n "))
              index=int(delete)-1
-             tasks.pop(index)
-             print(f"List got deleted", tasks)
+             if 1<= delete <= len(tasks):
+                 tasks.pop(index)
+                 print(f"List got deleted")
+                 view_tasks()
+             else:
+                 print("invalid,Go to back Menu!")
+
     elif menu=='4':
         print("4. Exit")
         break
