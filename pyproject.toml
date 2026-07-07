@@ -1,6 +1,6 @@
 [project]
 name = "to-do-list-app"
 version = "0.1.0"
-description = "Add your description here"
+description = "A simple command-line to-do list application built with Python"
 requires-python = ">=3.14"
 dependencies = []
