@@ -3,6 +3,8 @@ tasks=[]
 def view_tasks():
     for index, task in enumerate(tasks, start=1):
         print(f"{index}.{task}")
+def greeting():
+    print("Thank you for using the App!!")
 
 while True:
     print("TO-DO LIST MENU")
@@ -28,8 +30,11 @@ while True:
              else:
                  print("invalid,Go to back Menu!")
 
+
     elif menu=='4':
-        print("4. Exit")
+        print("Exiting....")
+        greeting()
         break
     else:
         print("In-Valid Try to choose again from the Menu")
+        greeting()
